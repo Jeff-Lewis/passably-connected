@@ -30,3 +30,8 @@ passably-connected folder and drop them into your app. If you dont want
 to use the ViewController files, then just look at how the other
 files interact with it and replicate that logic in your own
 file. It's a plain-jane delegate method implementation.
+
+Future
+======
+Maybe this will become a static library? This current format just felt more
+accessible.
