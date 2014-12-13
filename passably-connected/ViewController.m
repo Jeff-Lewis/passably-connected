@@ -40,12 +40,7 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - BrowserHelperDelegate
-
-/* - method gets triggered from BrowserHelper-foundPeer method
-   - we call it from there via delegate method. we invite the peer
-   - we found to our current session.
-   - */
+#pragma mark - BrowserWrapperDelegate
 
 -(void) inviteFoundPeer:(MCPeerID *)foreignPeerID{
 
@@ -63,11 +58,9 @@
     NSLog(@"%s FAILED TO START BROWSING ALL TOGETHER WITH ERROR: %@", __PRETTY_FUNCTION__, error);
 }
 
-#pragma mark - AdvertiserHelperDelegate
+#pragma mark - AdvertiserWrapperDelegate
 
-/* - method gets triggered from AdvertiserHelper-didreceiveInvitaiton... method
-   - I'm not sure if passind the invitation handler through as a paramter to the
-   - delegate function will work, then again it's a pointer to the original so it should
+/* - method gets triggered from AdvertiserHelper-didreceiveInvitaiton
    - */
 
 -(void) acceptInvitationFromPeer:(MCPeerID *)foreignPeerID
@@ -76,7 +69,7 @@
     invitationHandler(YES, _sessionWrapper.session);
 
     NSLog(@"%s INVITATION FROM PEER %@ ACCEPTED", __PRETTY_FUNCTION__, foreignPeerID);
-    // - [_advertiserWrapper stopAdvertising]; uncomment if that's your jam - //
+    // - [_advertiserWrapper stopAdvertising]; // - uncomment if that's your jam - //
 }
 
 -(void) failedToAdvertise:(NSError *)error{
@@ -84,7 +77,7 @@
     NSLog(@"%s FAILED TO START ADVERTISING ALL TOGETHER WITH ERROR: %@", __PRETTY_FUNCTION__, error);
 }
 
-#pragma mark - SessionHelperDelegate
+#pragma mark - SessionWrapperDelegate
 
 -(void) peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state{
 

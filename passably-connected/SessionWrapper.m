@@ -110,7 +110,7 @@ static NSString* const ServiceName = @"passably-connected-YOURAPPNAME";
     [_sessionDelegate didReceiveData:data fromPeer:peerID];
 }
 
-/* - I should probably figure out what this method actually does...not in the docs...THANKS OBAMA - */
+/* - This method is not in the docs...THANKS, OBAMA - */
 
 -(void)session:(MCSession *)session didReceiveCertificate:(NSArray *)cert fromPeer:(MCPeerID *)peerID certificateHandler:(void(^)(BOOL accept))certHandler {
 
