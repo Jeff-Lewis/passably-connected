@@ -35,3 +35,6 @@ Future
 ======
 Maybe this will become a static library? This current format just felt more
 accessible.
+
+As always if you have any questions or just wana chat about some obscure art project,
+hit me up on twitter <a href="https://twitter.com/yvanscher">@yvanscher</a>.
