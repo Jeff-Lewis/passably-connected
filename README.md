@@ -21,7 +21,7 @@ happens. For example when we find a peer 'inviteFoundPeer'
 gets triggered. Delegates trigger stuff magically.
 
 Friendly Reminder: Make sure both your bluetooth and wifi card are
-active, on yourdevice!
+active on yourdevice!
 
 Usage
 =====
