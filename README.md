@@ -5,7 +5,7 @@ passably-connected is a boilerplate for Apple's Multipeer Connectivity framework
 
 It abstracts away some of the weird parts of the multipeer connectivity
 framework to get make it easy to use and keep your code clean. Each
-wrapper class implements the viewcontroller as a delegate and
+wrapper class implements the ViewController as a delegate and
 the ViewController implements each of those delegates and
 their protocol methods.
 
