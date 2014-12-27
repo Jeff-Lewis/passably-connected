@@ -17,7 +17,9 @@
 
 @end
 
-@interface BrowserWrapper : NSObject <MCNearbyServiceBrowserDelegate>
+@interface BrowserWrapper : NSObject <MCNearbyServiceBrowserDelegate>{
+
+}
 
 @property (nonatomic, readonly) BOOL browsing;
 @property (nonatomic) id <BrowserWrapperDelegate> browserDelegate;
