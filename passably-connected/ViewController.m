@@ -45,7 +45,7 @@
 -(void) inviteFoundPeer:(MCPeerID *)foreignPeerID{
 
     NSLog(@"%s INVITED FOREIGN PEER: %@", __PRETTY_FUNCTION__, foreignPeerID);
-    [_browserHelper.autobrowser invitePeer:foreignPeerID toSession:_sessionHelper.session withContext:nil timeout:5.0];
+    [_browserWrapper.autobrowser invitePeer:foreignPeerID toSession:_sessionWrapper.session withContext:nil timeout:5.0];
 }
 
 -(void) alertToLostPeer:(MCPeerID *)lostForeignPeerID{
