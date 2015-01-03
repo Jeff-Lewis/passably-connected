@@ -16,7 +16,9 @@
 
 @end
 
-@interface AdvertiserWrapper : NSObject <MCNearbyServiceAdvertiserDelegate>
+@interface AdvertiserWrapper : NSObject <MCNearbyServiceAdvertiserDelegate>{
+
+}
 
 @property (nonatomic, readonly) BOOL advertising;
 @property (nonatomic) id <AdvertiserWrapperDelegate> advertiserDelegate;
